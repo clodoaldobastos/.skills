@@ -1,0 +1,22 @@
+name: analyze-harbor-chart
+
+inputs:
+
+  chart_name
+
+steps:
+
+  - registry-login
+
+  - harbor-project-discovery
+
+  - harbor-chart-discovery:
+      chart_name: ${chart_name}
+
+  - harbor-chart-download
+
+  - helm-chart-analysis
+
+  - kubernetes-security-analysis
+
+  - report-generator
