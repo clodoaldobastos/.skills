@@ -1,6 +1,14 @@
 ---
 name: registry-login
-description: Realiza autenticação no Harbor 
+version: 1.0.0
+description: Realiza autenticação no Harbor
+owner: devops
+inputs:
+  - harbor_url
+  - harbor_user
+  - harbor_password
+outputs:
+  - session_file
 tools:
   - playwright
 ---

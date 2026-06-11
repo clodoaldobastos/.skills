@@ -1,6 +1,12 @@
 ---
 name: kubernetes-security-analysis
+version: 1.0.0
 description: Analisa riscos Kubernetes
+owner: devops
+inputs:
+  - manifest_yaml
+outputs:
+  - security_report
 tools:
   - bash
 ---

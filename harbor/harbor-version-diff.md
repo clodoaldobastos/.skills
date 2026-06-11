@@ -1,6 +1,13 @@
 ---
 name: harbor-version-diff
+version: 1.0.0
 description: Compara versões de um chart
+owner: devops
+inputs:
+  - old_version
+  - new_version
+outputs:
+  - diff_report
 tools:
   - helm
   - bash

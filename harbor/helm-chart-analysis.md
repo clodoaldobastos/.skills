@@ -1,6 +1,14 @@
 ---
 name: helm-chart-analysis
+version: 1.0.0
 description: Analisa estrutura Helm
+owner: devops
+inputs:
+  - chart_path
+outputs:
+  - lint_result
+  - rendered_yaml
+  - analysis_report
 tools:
   - helm
   - bash

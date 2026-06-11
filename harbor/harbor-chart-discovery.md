@@ -1,6 +1,14 @@
 ---
 name: harbor-chart-discovery
+version: 1.0.0
 description: Localiza charts OCI em qualquer projeto Harbor
+owner: devops
+inputs:
+  - chart_name
+outputs:
+  - project
+  - repository
+  - oci_path
 tools:
   - bash
 ---
